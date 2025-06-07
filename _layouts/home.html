@@ -4,14 +4,192 @@ layout: default
 
 <div class="home">
 
-  <section class="intro">
-    <div class="intro-content">
-      <div class="bio">
-        <h1>Bio</h1>
-        <hr>
-        <p>这里可以添加您的个人简介、职业经历或其他想要展示的内容。这段文字将显示在分隔线下方，形成清晰的内容分区。</p>
-      </div>
+    <div class="Biography">
+      <h5>Biography</h5>
+      <p>I'm a PhD student in optoelectronic information engineering at Beijing Institute of Technology, advised by Prof. Dongdong Weng.</p>
+      <p>My current research focuses on:</p>
+      <p>3D/4D neural reconstruction and rendering, and digital humans.</p>
     </div>
-  </section>
+
+    <hr>
+
+    <div class="Publication">
+
+
+      <h5>STGA: Selective-Training Gaussian Head Avatars</h5>
+      <!-- 左右布局容器 -->
+      <div class="pub-container">
+        <!-- 左侧图片 -->
+        <div class="pub-image">
+          <img src="assets/STGA.png" alt="STGA: Selective-Training Gaussian Head Avatars">
+          <!-- <div class="image-caption">Overview of the STGA framework</div> -->
+        </div>
+        
+        <!-- 右侧详细信息 -->
+        <div class="pub-details">
+          <div class="pub-meta">
+            <p><strong>Authors:</strong> Hanzhi Guo, Yixiao Chen, Dongye Xiaonuo, Zeyu Tian, Dongdong Weng, Le Luo</p>
+            <!-- <p><strong>Conference:</strong> CVPR 2025</p> -->
+            <!-- <p><strong>Status:</strong> <span class="status-inreview">Under Review</span></p> -->
+          </div>
+         
+          <!-- <div class="pub-abstract">
+            <h6>Abstract</h6>
+            <p>We propose STGA, a novel approach for creating high-fidelity head avatars using selective training of Gaussian representations. Our method enables real-time rendering of photorealistic digital humans with dynamic expressions.</p>
+          </div> -->
+
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2503.05196" class="btn" target="_blank">
+              <i class="fas fa-file-pdf"></i> Paper
+            </a>
+            <!-- <a href="#" class="btn" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a href="#" class="btn" target="_blank">
+              <i class="fas fa-video"></i> Demo
+            </a>
+            <a href="#" class="btn" target="_blank">
+              <i class="fas fa-database"></i> Data -->
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+    </div>
+
 
 </div>
+
+
+<style>
+  /* 出版物整体样式 */
+  .publication {
+    margin-top: 2.5rem;
+    padding: 1.8rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  }
+
+  /* 左右布局容器 */
+  .pub-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.2rem;
+  }
+
+  /* 左侧图片区域 */
+  .pub-image {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .pub-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease;
+  }
+
+  .pub-image img:hover {
+    transform: translateY(-5px);
+  }
+
+  .image-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 0.8rem;
+    font-style: italic;
+  }
+
+  /* 右侧详细信息区域 */
+  .pub-details {
+    flex: 1.5;
+    min-width: 300px;
+  }
+
+  .pub-meta {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .pub-meta p {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .status-inreview {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: #fff3cd;
+    color: #856404;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .pub-abstract {
+    margin-bottom: 1.8rem;
+  }
+
+  .pub-abstract h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+  }
+
+  .pub-abstract p {
+    line-height: 1.7;
+    color: #444;
+  }
+
+  /* 按钮样式 */
+  .pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.4rem;
+    background: #f8f9fa;
+    color: #212529;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+  }
+
+  .btn:hover {
+    background: #e9ecef;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-color: #ced4da;
+  }
+
+  .btn i {
+    font-size: 0.9rem;
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .pub-container {
+      flex-direction: column;
+    }
+    
+    .pub-image, .pub-details {
+      min-width: 100%;
+    }
+  }
+</style>
