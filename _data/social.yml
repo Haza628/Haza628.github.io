@@ -1,6 +1,6 @@
-- title: Twitter
-  url: https://twitter.com/ngzhio
-  icon: fab fa-twitter
+- title: Google Scholar
+  url: https://scholar.google.com/citations?user=AlQxDsUAAAAJ&hl=zh-CN
+  icon: fab fa-google-scholar
 - title: GitHub
-  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  url: https://github.com/Haza628
   icon: fab fa-github

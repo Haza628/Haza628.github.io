@@ -17,6 +17,12 @@
         <span class="contact-info p-name">{{ site.author | escape }}</span>
       </li>
     {%- endif %}
+    {% if site.location -%}
+      <li>
+        <i class="sidebar-icon fas fa-at"></i>
+        <span class="contact-info p-loc">{{ site.location | escape }}</span>
+      </li>
+    {%- endif %}
     {% if site.email -%}
       <li>
         <i class="sidebar-icon fas fa-envelope"></i>
@@ -31,14 +37,6 @@
     {%- endif %}
   </ul>
 </div>
-
-{% if site.subscribe != false -%}
-<div class="sidebar-section feed-subscribe">
-  <a href="{{ 'feed.xml' | relative_url }}">
-    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
-  </a>
-</div>
-{%- endif %}
 
 {% if site.data.social -%}
   <div class="sidebar-section">
