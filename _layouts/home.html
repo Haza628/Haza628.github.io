@@ -4,77 +4,58 @@ layout: default
 
 <div class="home">
 
-    <div class="Biography">
-      <h5>Biography</h5>
-      <p>I'm a PhD student in optoelectronic information engineering at Beijing Institute of Technology, advised by Prof. Dongdong Weng.</p>
-      <p>My current research focuses on:</p>
-      <p>3D/4D neural reconstruction and rendering, and digital humans.</p>
-    </div>
+  <div class="home-logos">
+    <img src="assets/bit_logo.svg" alt="Beijing Institute of Technology" class="home-logo">
+    <img src="assets/buaa_logo.png" alt="Beihang University" class="home-logo">
+  </div>
 
-    <hr>
+  <div class="Biography">
+    <h5>Biography</h5>
+    <p>I'm a PhD student in optoelectronic information engineering at Beijing Institute of Technology, advised by Prof. Dongdong Weng.</p>
+    <p>My current research focuses on:</p>
+    <p>3D/4D neural reconstruction and rendering, and digital humans.</p>
+
+    <h5 class="bio-subtitle">Education</h5>
+    <p>M.S. from <a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener">Beihang University</a> (北京航空航天大学).<br>
+    Ph.D. at <a href="https://www.bit.edu.cn/" target="_blank" rel="noopener">Beijing Institute of Technology</a> (北京理工大学).</p>
+  </div>
+
+  <hr>
 
   <div class="publication">
+    <h4 class="publication-section-title">Representative Work</h4>
 
-    <!-- 项目 -->
+    <!-- Project 1 -->
     <h5>Topology-Aware Gaussian Splatting for Dynamic Mesh Modeling and Tracking</h5>
     <div class="pub-container">
-      
-      <!-- 左侧图片 -->
       <div class="pub-image">
         <img src="assets/tagSplat.png" alt="Topology-Aware Gaussian Splatting">
-        <!-- <div class="image-caption">Overview of the TAG-Splat framework</div> -->
       </div>
-      
-      <!-- 右侧详细信息 -->
       <div class="pub-details">
         <div class="pub-meta">
-          <p><strong>Authors:</strong> Hanzhi Guo, Dongdong Weng, Mo Su, Yixiao Chen, Xiaonuo Dongye, Chenyu Xu</p>
-          <!-- <p><strong>Conference:</strong> CVPR 2025</p> -->
-          <!-- <p><strong>Status:</strong> <span class="status-inreview">Under Review</span></p> -->
+          <p><span class="pub-meta-label">Authors:</span> <span class="pub-meta-value"><strong>Hanzhi Guo</strong>, Dongdong Weng, Mo Su, Yixiao Chen, Xiaonuo Dongye, Chenyu Xu</span></p>
+          <p><span class="pub-meta-label">Conference:</span> <span class="pub-meta-value">CVPR 2026</span></p>
         </div>
-
-        <!-- <div class="pub-abstract">
-          <h6>Abstract</h6>
-          <p>We propose TAG-Splat, a method for dynamic mesh modeling and tracking with topology-aware Gaussian splats.</p>
-        </div> -->
-
         <div class="pub-links">
           <a href="https://haza628.github.io/tagSplat/" class="btn" target="_blank">
             <i class="fab fa-github"></i> Project Page
           </a>
-          <!-- <a href="https://arxiv.org/abs/2503.05196" class="btn" target="_blank">
-            <i class="fas fa-file-pdf"></i> Paper
-          </a> -->
-          <!-- <a href="https://github.com/Haza628/STGA" class="btn" target="_blank">
-            <i class="fab fa-github"></i> Code
-          </a> -->
         </div>
       </div>
     </div>
+
     <hr>
-  
-    <!-- 项目 -->
+
+    <!-- Project 2 -->
     <h5>STGA: Selective-Training Gaussian Head Avatars</h5>
     <div class="pub-container">
-      <!-- 左侧图片 -->
       <div class="pub-image">
         <img src="assets/STGA.png" alt="STGA: Selective-Training Gaussian Head Avatars">
-        <!-- <div class="image-caption">Overview of the STGA framework</div> -->
       </div>
-      
-      <!-- 右侧详细信息 -->
       <div class="pub-details">
         <div class="pub-meta">
-          <p><strong>Authors:</strong> Hanzhi Guo, Yixiao Chen, Dongye Xiaonuo, Zeyu Tian, Dongdong Weng, Le Luo</p>
-          <!-- <p><strong>Conference:</strong> CVPR 2025</p> -->
-          <!-- <p><strong>Status:</strong> <span class="status-inreview">Under Review</span></p> -->
+          <p><span class="pub-meta-label">Authors:</span> <span class="pub-meta-value"><strong>Hanzhi Guo</strong>, Yixiao Chen, Dongye Xiaonuo, Zeyu Tian, Dongdong Weng, Le Luo</span></p>
         </div>
-
-        <!-- <div class="pub-abstract">
-          <h6>Abstract</h6>
-          <p>We propose STGA, a novel approach for creating high-fidelity head avatars using selective training of Gaussian representations. Our method enables real-time rendering of photorealistic digital humans with dynamic expressions.</p>
-        </div> -->
-
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2503.05196" class="btn" target="_blank">
             <i class="fas fa-file-pdf"></i> Paper
@@ -82,147 +63,75 @@ layout: default
           <a href="https://github.com/Haza628/STGA" class="btn" target="_blank">
             <i class="fab fa-github"></i> Code
           </a>
-          <!-- <a href="#" class="btn" target="_blank">
-            <i class="fas fa-video"></i> Demo
-          </a> -->
-          <!-- <a href="#" class="btn" target="_blank">
-            <i class="fas fa-database"></i> Data
-          </a> -->
         </div>
       </div>
     </div>
+
     <hr>
   </div>
+
+  <div class="other-work">
+    <h4 class="publication-section-title">Other Work</h4>
+    <h5>Facial Auto Rigging from 4D Expressions via Skinning Decomposition</h5>
+    <div class="pub-container">
+      <div class="pub-image">
+        <img src="assets/Facial_Auto_Rigging.png" alt="Facial Auto Rigging from 4D Expressions via Skinning Decomposition">
+      </div>
+      <div class="pub-details">
+        <div class="pub-meta">
+          <p><span class="pub-meta-label">Authors:</span> <span class="pub-meta-value">Zhihe Zhao, Dongdong Weng, <strong>Hanzhi Guo</strong>, Jing Hou, Jixiang Zhou</span></p>
+          <p><span class="pub-meta-label">Conference:</span> <span class="pub-meta-value">ACM MM 2023</span></p>
+        </div>
+        <div class="pub-links">
+          <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612934" class="btn" target="_blank">
+            <i class="fas fa-file-pdf"></i> Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+
+    <h5>LoDAvatar: hierarchical embedding and selective detail enhancement for adaptive levels of detail Gaussian avatars</h5>
+    <div class="pub-container">
+      <div class="pub-image">
+        <img src="assets/LoDAvatar.png" >
+      </div> 
+      <div class="pub-details">
+        <div class="pub-meta">
+          <p><span class="pub-meta-label">Authors:</span> <span class="pub-meta-value">Xiaonuo Dongye, <strong>Hanzhi Guo</strong>, Le Luo, Haiyan Jiang, Yihua Bao, Jie Guo, Zeyu Tian, Dongdong Weng</span></p>
+          <p><span class="pub-meta-label">Journal:</span> <span class="pub-meta-value">Virtual Reality</span></p>
+        </div>
+        <div class="pub-links">
+          <a href="https://link.springer.com/article/10.1007/s10055-025-01249-3" class="btn" target="_blank">
+            <i class="fas fa-file-pdf"></i> Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+
+
+    <h5>Minigs: efficient 3D Gaussian splatting with full factors weighted pruning for scene representation</h5>
+    <div class="pub-container">
+      <div class="pub-image">
+        <img src="assets/Minigs.png">
+      </div>
+      <div class="pub-details">
+        <div class="pub-meta">
+          <p><span class="pub-meta-label">Authors:</span> <span class="pub-meta-value">Qing Yang, Xiaonuo Dongye, <strong>Hanzhi Guo</strong>, Dongdong Weng, Le Luo</span></p>
+          <p><span class="pub-meta-label">Journal:</span> <span class="pub-meta-value">Multimedia Systems</span></p>
+        </div>
+        <div class="pub-links">
+          <a href="https://link.springer.com/article/10.1007/s00530-025-02104-w" class="btn" target="_blank">
+            <i class="fas fa-file-pdf"></i> Paper
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
-
-
-<style>
-  /* 出版物整体样式 */
-  .publication {
-    margin: 2.5rem auto;
-    max-width: 1200px;
-    padding: 1.8rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  }
-
-  /* 左右布局容器 */
-  .pub-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    margin-top: 1.2rem;
-  }
-
-  /* 左侧图片区域 */
-  .pub-image {
-    flex: 1;
-    min-width: 300px;
-  }
-
-  .pub-image {
-    flex: 1;
-    min-width: 300px;        /* 最小宽度，低于这个宽度会缩小列 */
-    max-width: 400px;        /* 最大宽度，超过这个宽度就裁剪图片 */
-    overflow: hidden;        /* 超出容器的图片部分隐藏 */
-  }
-
-  .pub-image img {
-    width: 100%;             /* 填充容器宽度 */
-    height: 250px;           /* 固定高度，可根据需求调整 */
-    object-fit: cover;       /* 超出部分裁剪，同时保持比例 */
-    border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    border: 1px solid #f0f0f0;
-    transition: transform 0.3s ease;
-  }
-
-  .pub-image img:hover {
-    transform: translateY(-5px);
-  }
-  /* 右侧详细信息区域 */
-  .pub-details {
-    flex: 1.5;
-    min-width: 300px;
-  }
-
-  .pub-meta {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.2rem;
-    border-bottom: 1px solid #eee;
-  }
-
-  .pub-meta p {
-    margin-bottom: 0.7rem;
-    font-size: 1rem;
-  }
-
-  .status-inreview {
-    display: inline-block;
-    padding: 0.2rem 0.8rem;
-    background: #fff3cd;
-    color: #856404;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 500;
-  }
-
-  .pub-abstract {
-    margin-bottom: 1.8rem;
-  }
-
-  .pub-abstract h6 {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
-    color: #333;
-  }
-
-  .pub-abstract p {
-    line-height: 1.7;
-    color: #444;
-  }
-
-  /* 按钮样式 */
-  .pub-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-  }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.7rem 1.4rem;
-    background: #f8f9fa;
-    color: #212529;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-    border: 1px solid #dee2e6;
-  }
-
-  .btn:hover {
-    background: #e9ecef;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    border-color: #ced4da;
-  }
-
-  .btn i {
-    font-size: 0.9rem;
-  }
-
-  /* 响应式设计 */
-  @media (max-width: 768px) {
-    .pub-container {
-      flex-direction: column;
-    }
-    
-    .pub-image, .pub-details {
-      min-width: 100%;
-    }
-  }
-</style>

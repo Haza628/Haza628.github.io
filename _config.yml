@@ -1,15 +1,26 @@
 title: Hanzhi Guo
-description: BIT  # Beyond the horizon, countless paths await.
-author: Hanzhi Guo
+description: 🧑‍💻  # Beyond the horizon, countless paths await.
+author: 郭瀚之 (Hanzhi Guo)
 avatar: /logo.png
 location: Beijing, China
 email: guohzleb@163.com
+
+skin: daylight
 
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-theme-hamilton.gemspec
+  - README.md
+  - LICENSE.txt
+  - scripts/
+  - vendor/
 
 paginate: 10
 

@@ -4,3 +4,7 @@
 .sass-cache
 _site
 Gemfile.lock
+vendor/
+
+# macOS 资源 fork，避免误提交
+._*

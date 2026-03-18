@@ -1,1 +1,138 @@
-// Placeholder to allow customizing styles.
+@charset "UTF-8";
+
+/* ===== Biography & Education ===== */
+.home-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ===== Biography & Education ===== */
+.bio-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+/* ===== Publication cards ===== */
+.publication {
+  margin: 2.5rem auto;
+  max-width: 1200px;
+  padding: 1.8rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  h5 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-family: Roboto, "Noto Sans SC", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.35;
+    color: #1a1a1a;
+  }
+}
+
+.publication-section-title {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.other-work {
+  margin: 2.5rem auto;
+  max-width: 1200px;
+  padding: 1.8rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Layout: image + details ===== */
+.pub-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  margin-top: 1.2rem;
+}
+
+.pub-image {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+}
+
+/* Show full image (no cropping) */
+.pub-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.pub-image img:hover {
+  transform: translateY(-5px);
+}
+
+.pub-details {
+  flex: 1.5;
+  min-width: 280px;
+}
+
+.pub-meta {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-meta p {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+
+/* Labels: Authors / Conference */
+.pub-meta-label {
+  font-weight: 500;
+  font-size: 1.08em;
+  color: #6b7280;
+  margin-right: 0.25em;
+}
+
+/* Values: author list and conference name */
+.pub-meta-value {
+  font-size: 0.92em;
+}
+
+/* Buttons layout reuse existing .btn styles from theme */
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+/* Responsive: stack image and details on small screens */
+@media (max-width: 768px) {
+  .pub-container {
+    flex-direction: column;
+  }
+
+  .pub-image,
+  .pub-details {
+    min-width: 100%;
+  }
+}
